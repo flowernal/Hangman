@@ -289,6 +289,3 @@ client.on("message", (message) => {
         }
     }
 });
-
-
-client.login("NTkyNzIwMTMwNDU5NTY2MTA0.XRES2Q.nnFxEQrS90kfeI2CyFXo09g6bWg");
