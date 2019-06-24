@@ -15,11 +15,6 @@ function hasOnlyLetters(string) {
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log("Som zapatý už");
-    client.user.setActivity("!hangman", { type: 'LISTENING' });
-});
-
 client.on("message", (message) => {
     var args = message.content.split(" ");
     var command = args[0].toLowerCase().latinize();
