@@ -9,4 +9,5 @@ As you can read from the title, this entry is a minigame called Hangman.
 # Authors
 
 **BramboraSK:** Leader, programming
+
 **JanZornicka:** Programming, ideas, fixed spelling errors, tester
