@@ -18,6 +18,6 @@ As you can read from the title, this entry is minigame Hangman.
 
 **6.** Guess letters/word and have fun! :)
 
-### Invite link
+## Invite link
 
 https://discordapp.com/oauth2/authorize?client_id=592720130459566104&scope=bot&permissions=93184
