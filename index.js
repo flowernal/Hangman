@@ -91,10 +91,16 @@ client.on("message", (message) => {
                     title: 'Hangman',
                     description: emojiDescription, //This will be replaced with letters
                     color: 0x7ec0ee, //Sky Blue 2
-                    fields: [{
+                    fields: [
+                    {
                         name: 'Mistakes:',
                         value: '0'
-                    }],
+                    },
+                    {
+                        name: 'Used letters:',
+                        value: 'None.'
+                    }
+                    ],
                     thumbnail: {
                         url: "http://www.cs.iusb.edu/~danav/teach/b583/lab1img/gibbet.png"
                     }
@@ -111,6 +117,7 @@ client.on("message", (message) => {
                 const receivedEmbed = gameMsg.embeds[0];
                 const hangmanEmbed = new Discord.RichEmbed(receivedEmbed); //The embed, which was sent as gameMsg
                 const mistakesField = Object.assign({}, hangmanEmbed.fields[0]); //Field from hangmanEmbed
+                const usedLettersField = Object.assign({}, hangmanEmbed.fields[1]); //Field from hangmanEmbed
 
                 //If user has guessed the word
                 if(msg.content.toUpperCase() == word) {
@@ -132,13 +139,21 @@ client.on("message", (message) => {
                     collector.stop();
                     return;
                 }
+                //Adding used letters into a field and some weird shenanigans with the mistake counter
+                if(usedLettersField.value == "None.") {
+                    usedLettersField.value = msg.content.toUpperCase();
+                    if(!word.includes(msg.content.toUpperCase())) mistakesField.value = Number(mistakesField.value) + 1;
+                } else if(!usedLettersField.value.includes(msg.content.toUpperCase())) {
+                    usedLettersField.value += ", "+msg.content.toUpperCase();
+                    if(!word.includes(msg.content.toUpperCase())) mistakesField.value = Number(mistakesField.value) + 1;
+                }
 
                 if(msg.content.length > 1 || hasOnlyLetters(msg.content) == false) return; //Return, if user isn't guessing the letters
                 msg.delete(3000); //Delete message to avoid spam
 
+
                 //If the word doesn't contain the letter
                 if(!word.includes(msg.content.toUpperCase())) {
-                    mistakesField.value = Number(mistakesField.value) + 1; //Add mistake
 
                     //Change color, if user has 8 or more mistakes
                     if(mistakesField.value == 8) {
@@ -153,7 +168,7 @@ client.on("message", (message) => {
                         title: hangmanEmbed.title,
                         description: hangmanEmbed.description,
                         color: currentColor,
-                        fields: [mistakesField],
+                        fields: [mistakesField, usedLettersField],
                         thumbnail: {
                             url: "http://www.cs.iusb.edu/~danav/teach/b583/lab1img/gibbet.png"
                         }
@@ -209,7 +224,7 @@ client.on("message", (message) => {
                             title: hangmanEmbed.title,
                             description: description,
                             color: currentColor,
-                            fields: [mistakesField],
+                            fields: [mistakesField, usedLettersField],
                             thumbnail: {
                                 url: "http://www.cs.iusb.edu/~danav/teach/b583/lab1img/gibbet.png"
                             }
@@ -256,7 +271,7 @@ client.on("message", (message) => {
                             title: hangmanEmbed.title,
                             description: hangmanEmbed.description.replaceAt(place, msg.content.toUpperCase()),
                             color: currentColor,
-                            fields: [mistakesField],
+                            fields: [mistakesField, usedLettersField],
                             thumbnail: {
                                 url: "http://www.cs.iusb.edu/~danav/teach/b583/lab1img/gibbet.png"
                             }
