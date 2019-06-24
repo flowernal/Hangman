@@ -1,8 +1,8 @@
 # Hangman
 
-This is entry for Discord Hack Week.
+This is an entry for Discord Hack Week.
 
-As you can read from the title, this entry is minigame Hangman.
+As you can read from the title, this entry is a minigame called Hangman.
 
 # FOLLOW THESE STEPS, IF YOU WANT TO TEST THIS BOT
 
@@ -12,9 +12,9 @@ As you can read from the title, this entry is minigame Hangman.
 
 **3.** The BOT will send you a DM.
 
-**4.** Type any word that you like in DM with BOT.
+**4.** Type any word or two that you like in DM with the BOT.
 
-**5.** The BOT will send embed with *Hangman Minigame* to the channel where you preformed the command.
+**5.** The BOT will send embed with *Hangman Minigame* to the channel where you performed the command.
 
 **6.** Guess letters/word and have fun! :)
 
