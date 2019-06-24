@@ -115,7 +115,7 @@ client.on("message", (message) => {
                 //If user has guessed the word
                 if(msg.content.toUpperCase() == word) {
                     mistakesField.name = "You've won!";
-                    mistakesField.value = "You've had "+mistakesField.value+" mistakes.";
+                    mistakesField.value = "You had "+mistakesField.value+" mistakes.";
 
                     const newHangmanEmbed = new Discord.RichEmbed({
                         title: hangmanEmbed.title,
@@ -134,7 +134,7 @@ client.on("message", (message) => {
                 }
 
                 if(msg.content.length > 1 || hasOnlyLetters(msg.content) == false) return; //Return, if user isn't guessing the letters
-                msg.delete(); //Delete message to avoid spam
+                msg.delete(3000); //Delete message to avoid spam
 
                 //If the word doesn't contain the letter
                 if(!word.includes(msg.content.toUpperCase())) {
@@ -162,7 +162,7 @@ client.on("message", (message) => {
                     //If user has 10 mistakes
                     if(mistakesField.value == 10) {
                         mistakesField.name = "You've lost!";
-                        mistakesField.value = "You've had 10 mistakes.";
+                        mistakesField.value = "You had 10 mistakes.";
 
                         const newHangmanEmbed = new Discord.RichEmbed({
                             title: hangmanEmbed.title,
@@ -218,7 +218,7 @@ client.on("message", (message) => {
                         //If user has won
                         if(!newHangmanEmbed.description.includes("⏹")) {
                             mistakesField.name = "You've won!";
-                            mistakesField.value = "You've had "+mistakesField.value+" mistakes.";
+                            mistakesField.value = "You had "+mistakesField.value+" mistakes.";
 
                             const newHangmanEmbed = new Discord.RichEmbed({
                                 title: hangmanEmbed.title,
@@ -264,7 +264,7 @@ client.on("message", (message) => {
 
                         if(!newHangmanEmbed.description.includes("⏹")) {
                             mistakesField.name = "You've won!";
-                            mistakesField.value = "You've had "+mistakesField.value+" mistakes.";
+                            mistakesField.value = "You had "+mistakesField.value+" mistakes.";
 
                             const newHangmanEmbed = new Discord.RichEmbed({
                                 title: hangmanEmbed.title,
@@ -289,3 +289,6 @@ client.on("message", (message) => {
         }
     }
 });
+
+
+client.login("NTkyNzIwMTMwNDU5NTY2MTA0.XRES2Q.nnFxEQrS90kfeI2CyFXo09g6bWg");
