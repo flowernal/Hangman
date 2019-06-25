@@ -13,6 +13,9 @@ As you can read from the title, this entry is a minigame called Hangman.
 **Discord tag:** BramboraSK#0001
 
 
+
+
+
 **JanZornicka:** Programming, ideas, fixed spelling errors, tester
 
 **Discord tag:** Honik12Jan21#7068
