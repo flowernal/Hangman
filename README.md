@@ -1,5 +1,7 @@
 # Hangman
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/BramboraSK)
+
 This is an entry for Discord Hack Week.
 
 As you can read from the title, this entry is a minigame called Hangman.
