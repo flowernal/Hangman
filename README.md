@@ -23,8 +23,8 @@ As you can read from the title, this entry is a minigame called Hangman.
 
 **Discord tag:** Honik12Jan21#7068
 
-# Invite link
+# Invite links
 
-https://discordapp.com/oauth2/authorize?client_id=592720130459566104&scope=bot&permissions=388160
+**BOT:** https://discordapp.com/oauth2/authorize?client_id=592720130459566104&scope=bot&permissions=388160
 
-<iframe src="https://discordapp.com/widget?id=593810362294468608&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+**Server:** https://discord.gg/zTYFr2R
