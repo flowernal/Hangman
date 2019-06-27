@@ -2,6 +2,10 @@
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/BramboraSK)
 
+[![Code quality](https://codecov.io/gh/BramboraSK/Hangman/branch/master/graph/badge.svg)](https://codecov.io/gh/BramboraSK/Hangman)
+
+
+
 This is an entry for Discord Hack Week.
 
 As you can read from the title, this entry is a minigame called Hangman.
