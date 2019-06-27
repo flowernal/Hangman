@@ -26,3 +26,5 @@ As you can read from the title, this entry is a minigame called Hangman.
 # Invite link
 
 https://discordapp.com/oauth2/authorize?client_id=592720130459566104&scope=bot&permissions=388160
+
+<iframe src="https://discordapp.com/widget?id=593810362294468608&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
