@@ -1,6 +1,7 @@
 # Hangman
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/BramboraSK)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 This is an entry for Discord Hack Week.
 
