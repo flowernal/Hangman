@@ -9,7 +9,7 @@ As you can read from the title, this entry is a minigame called Hangman.
 
 ***Don't spam letters, the BOT could bug out.***
 
-If you can manage channel, I highly recommend to make a channel especially for this BOT and set there a timeout.
+If you have Manage Channels permission, I highly recommend to make a channel especially for this BOT and set there a timeout.
 
 # Authors
 
