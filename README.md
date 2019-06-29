@@ -3,23 +3,19 @@
 [![donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/BramboraSK)
 ![Discord](https://img.shields.io/discord/593810362294468608.svg)
 
-This is an entry for Discord Hack Week.
+This bot is an entry for Discord Hack Week.
 
-As you can read from the title, this entry is a minigame called Hangman.
+Using this BOT, you can play hangman!
 
-***Don't spam letters, the BOT could bug out.***
+If you have Manage Channels permission, I highly recommend to make a channel especially for this BOT.
 
-If you have Manage Channels permission, I highly recommend to make a channel especially for this BOT and set there a timeout.
+People in a guild can guess only one letter every **1.5s**!
 
 # Authors
 
 **BramboraSK:** Leader, programming
 
 **Discord tag:** BramboraSK#0001
-
-
-
-
 
 **JanZornicka:** Programming, ideas, fixed spelling errors, tester
 
