@@ -19,7 +19,7 @@ People in a guild can guess only one letter every **1.5s**!
 
 **JanZornicka:** Programming, ideas, fixed spelling errors, tester
 
-**Discord tag:** Honik12Jan21#7068
+**Discord tag:** 12Jan21 / Honik \[DA]#7068
 
 # Invite links
 
